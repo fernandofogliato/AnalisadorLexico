@@ -1,0 +1,22 @@
+program teste7;
+var 
+  a, b, c, i: integer;
+begin
+  readln(a, b);
+  readln(i);
+  c := 0;
+  case i of
+    1, 4:   case a of 
+                 1, 2, 3:  writeln("Entrou Case dentro Case") ;
+                 4:  writeln("Case 4") 
+              end;
+
+    2, 3, 5: c := a - b;
+
+    11: begin
+          c := a * b;
+          writeln("Ultimo ramo") ;
+        end
+   end;
+   writeln(c);  
+end.

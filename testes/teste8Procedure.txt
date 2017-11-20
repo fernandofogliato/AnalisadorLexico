@@ -1,0 +1,22 @@
+program teste8;
+var
+  i, j: integer;
+  
+	procedure soma(a, b: integer);
+	var
+	  s: integer;
+	begin
+	  s := a + b;
+	  writeln(s);
+	end;
+
+	procedure multiplica(a, b: integer);
+	begin
+	  writeln(a * b);
+	end;
+
+begin
+  readln(i, j);
+  call soma(i, j);
+  call multiplica(i, j);
+end.

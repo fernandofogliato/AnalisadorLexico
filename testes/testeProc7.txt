@@ -1,0 +1,16 @@
+Program TesteProc7;
+  Procedure p1;
+     Procedure p2;
+        Procedure p3(v:integer);
+        begin
+           Writeln(v);
+        end;
+        begin
+          Call p3(33);
+        end;
+    begin
+      Call p2;
+    end;
+Begin
+   Call p1;
+End.

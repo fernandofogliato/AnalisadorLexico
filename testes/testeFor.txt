@@ -1,0 +1,10 @@
+PROGRAM TESTE6;
+VAR A,B: INTEGER;
+BEGIN
+    A:=0;
+	FOR B:=10 TO 20 DO
+	BEGIN
+	    A:=A+2*B;
+		WRITELN(A);
+	END;
+END.

@@ -1,0 +1,31 @@
+program teste8;
+const x = 75;
+var 
+  a, b, c, i: integer;
+begin
+  readln(a, b);
+  readln(i);
+  c := 0;
+  case i of
+    1, 4: begin
+           for a := 3 to 30 do
+             c := c + a;
+         end;
+
+    2, 3, 5: c := a -b;
+
+    11: begin
+          c := x;
+          writeln("C = ", c) ;
+        end
+   end;
+
+   if a > b then
+     writeln("A era MAIOR do que B")
+   else if a < b then
+     writeln("A era MENOR do que B")
+   else
+     writeln("A era IGUAL a B");
+  
+   writeln("Fim do programa");
+end.

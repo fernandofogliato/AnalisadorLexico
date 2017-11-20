@@ -1,0 +1,11 @@
+program teste6;
+var
+  a, b: integer;
+begin
+  a := 0;
+  for b := 10 to 20 do
+  begin
+    a := a + 2 * b;
+	writeln(a);
+  end;
+end.

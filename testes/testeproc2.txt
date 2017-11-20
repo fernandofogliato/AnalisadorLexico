@@ -1,0 +1,26 @@
+Program testeproc2;
+Var z: integer;
+
+	Procedure p;
+	Var z:integer;
+	
+		Procedure q;
+		Var t: integer;
+		Begin (* inicio da q *)
+			z := z - 100; t := z * a;
+			if t > 100 then call q else writeln(t)
+		end; (* fim de q *)
+		
+	begin (* inicio da P*)
+		z := x+y*a; if z > 100 then call q else writeln(z);
+	end; (*fim da p*)
+
+begin (* programa principal *)
+	readln(x,y);
+	
+	if x > 1000 then x := 1000
+				else x::= y+100;
+				
+	while x > y do begin call p; readln(x,y) end;
+	writeln("Tudo ok - boas férias");
+end.

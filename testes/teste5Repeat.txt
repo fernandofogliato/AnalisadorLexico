@@ -1,0 +1,14 @@
+program teste5;
+var
+  a, b, soma: integer;
+begin
+  writeln("Iniciando programa.");
+  soma := 0;
+  repeat
+  begin
+    readln(a, b);
+	soma := soma + a + b;
+  end
+  until a > b;
+  writeln(soma);
+end.
