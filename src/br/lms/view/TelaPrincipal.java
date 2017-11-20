@@ -255,7 +255,7 @@ public class TelaPrincipal extends Shell {
 	 * Atualiza a tabela de tokens encontrados
 	 * @param lista
 	 */
-	public void atualizaTabelaTokens(ArrayList<Token> lista) {
+	private void atualizaTabelaTokens(ArrayList<Token> lista) {
 		tableLexico.setItemCount(0);
 		
 		for (Token token : lista) {
@@ -272,7 +272,7 @@ public class TelaPrincipal extends Shell {
 	 * Atualiza as mensagens de erro
 	 * @param lista
 	 */
-	public void atualizaMensagensErro(ArrayList<String> lista) {
+	private void atualizaMensagensErro(ArrayList<String> lista) {
 		
 		String mensagem = "";
 		
@@ -283,7 +283,7 @@ public class TelaPrincipal extends Shell {
 		txtMensagem.setText(mensagem);
 	}
 	
-	public void executarAnaliseLexica() {
+	private void executarAnaliseLexica() {
 		String cadeia = txtEditor.getText()+"\n";
 		
 		lexico = new Lexico();
